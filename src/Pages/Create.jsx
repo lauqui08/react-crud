@@ -38,27 +38,30 @@ const Create = () => {
 
 
 return (
-            <form onSubmit={handleSubmit}>
+        <div className="col-md-4">
+                <form onSubmit={handleSubmit} className="form-control">
                 <div>
                     <label htmlFor="last_name">Last Name</label><br/>
-                    <input type="text" onChange={handleChange} value={person.last_name} name="last_name" id="last_name" />
+                    <input className="form-control" type="text" onChange={handleChange} value={person.last_name} name="last_name" id="last_name" />
                 </div>
                 <div>
                     <label htmlFor="first_name">First Name</label><br/>
-                    <input type="text" onChange={handleChange} value={person.first_name}   name="first_name" id="first_name" />
+                    <input className="form-control" type="text" onChange={handleChange} value={person.first_name}   name="first_name" id="first_name" />
                 </div>
                 <div>
                     <label htmlFor="gender">Gender</label><br/>
-                    <input type="text" onChange={handleChange} value={person.gender}   name="gender" id="gender" />
+                    <input className="form-control" type="text" onChange={handleChange} value={person.gender}   name="gender" id="gender" />
                 </div>
                 <div>
                     <label htmlFor="email">Email</label><br/>
-                    <input type="text" onChange={handleChange} value={person.email}   name="email" id="email" />
+                    <input className="form-control" type="text" onChange={handleChange} value={person.email}   name="email" id="email" />
                 </div>
-                <div>
-                    <button type="submit">Submit</button>
+                <div className="mt-3 text-end">
+                    <button className="btn btn-primary" type="submit">Submit</button>
                 </div>
             </form>
+        </div>
+            
     );
 
 };

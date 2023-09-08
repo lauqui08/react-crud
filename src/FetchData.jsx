@@ -21,7 +21,7 @@ const FecthData = () => {
     },[]);
 
     return (
-        <>
+        <div className="container mt-5">
         <table className="table">
             <thead>
                 <tr>
@@ -39,14 +39,14 @@ const FecthData = () => {
                     <td>{person.first_name +' '+ person.last_name}</td>
                     <td>{person.gender}</td>
                     <td>{person.email}</td>
-                    <td><Link to={"/View/"+person._id}>View</Link></td>
+                    <td><Link to={"/View/"+person._id} className="btn btn-primary btn-sm">View</Link></td>
                 </tr>
                 )
             })}
             </tbody>
 
         </table>
-        </>
+        </div>
     );
 };
 
